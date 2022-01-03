@@ -172,6 +172,7 @@ nav {
   font-weight: 300;
   font-size: 1rem;
 }
+
 nav em {
 	font-style: normal;
 	font-size: 13px;
@@ -203,13 +204,16 @@ nav ul {
 	-ms-flex-pack: distribute;
   justify-content: space-around;
 }
+
 nav ul li {
 	text-align: center;
 	margin: 5px 0px;
 }
+
 nav a, nav a:visited, nav a:active {
   color: #fff;
 }
+
 nav a {
 	text-decoration: none!important;
 	display: inline-block;
@@ -219,9 +223,11 @@ nav a {
 	z-index: 0;
 	transition: all .5s;
 }
-nav a.active {
-  background-color: rgba(0,0,0,0.8);
+
+nav a:hover, nav a:active {
+  background-color: #e983245b;
 }
+
 nav a::before {
   content: "";
   position: absolute;
@@ -232,6 +238,7 @@ nav a::before {
   opacity: 1;
   z-index: -1;
 }
+
 .logo {
 	margin-top: 0px;
   top: 0;
@@ -240,23 +247,10 @@ nav a::before {
   position: fixed;
  	display: inline-block;
   text-align: center;
-	background-color: #faf5b2;
 	height: 15%;
 	width: 15%;
 }
-.logo h1 {
-  font-size: 24px;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #111;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-}
-.logo h2 {
-  display: none;
-}
+
 .slides {
   width: 500vw;
   height: 100vh;
@@ -265,6 +259,7 @@ nav a::before {
   transition: transform 0.8s ease;
   transition: transform 0.8s ease, -webkit-transform 0.8s ease;
 }
+
 .slides .slide {
   height: 100vh;
   width: 100vw;
@@ -272,33 +267,35 @@ nav a::before {
   text-align: center;
   background-size: cover;
 }
+
 .slides .slide .content {
   overflow-y: scroll;
   position: relative;
   width: 80%;
-  height: 80%;
+  height: 85%;
   left: 20%;
   top: 10%;
 }
+
 .content::-webkit-scrollbar {
   display: none!important;
   opacity: 0!important;
   visibility: hidden!important;
 }
+
 /* Add a thumb */
 .content::-webkit-scrollbar-thumb {
   display: none!important;
   opacity: 0!important;
   visibility: hidden!important;
 }
+
 .slides .slide {
   background-position: center center;
   background-size: cover;
   background-position: fixed;
 }
-.slides .slide:nth-child(1) {
 
-}
 .slides .slide:nth-child(2) {
   background-image: url(../images/about-bg.jpg);
   background-position: fixed;
@@ -312,7 +309,9 @@ nav a::before {
   background-position: fixed;
 }
 
+
 /* Slide 1 Stlye */
+
 #slider-wrapper{
   max-width: 100%;
   width: 100%;
@@ -333,6 +332,7 @@ nav a::before {
   height: 100vh;
   position: relative;
 }
+
 #image-slider ul li {
   display: inline-block;
   position: absolute;
@@ -341,78 +341,105 @@ nav a::before {
   width: 100%;
   height:100%; 
 }
+
 #image-slider ul li {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   overflow: hidden;
 }
+
 #image-slider ul li:nth-child(1) {
   background-image: url(../images/full-bg-01.jpg);
 }
+
 #image-slider ul li:nth-child(2) {
   background-image: url(../images/full-bg-02.jpg);
 }
+
 #image-slider ul li:nth-child(3) {
   background-image: url(../images/full-bg-03.jpg);
 }
+
 #image-slider ul li.active-img{
   left: 0;
 }
+
 #thumbnail {
   position: absolute;
-  z-index: 99999;
+  z-index: 5;
   bottom: 30px;
   right: 30px;
 }
+
 #thumbnail ul {
   padding: 0px;
   margin: 0px;
 }
+
 #thumbnail ul li {
   display: inline-block;
   max-width: 120px;
   max-height: 120px;
   margin-left: 30px;
   cursor: pointer;
-  border: 4px solid transparent;
   transition: all 0.5s;
+  text-shadow: rgb(22, 22, 22) 1px 1px;
 }
+
 #thumbnail ul li.active {
-  border: 5px solid #faf5b2;
+  border: 4px solid #e98324d2;
+  text-shadow: rgb(22, 22, 22) 2px 2px;
 }
+
+#thumbnail ul li span {
+  position: absolute;
+  color:  rgba(255, 255, 255, 0.8);
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 15px;  
+}
+
 #thumbnail ul li img {
   max-width: 100%;
   overflow: hidden;
 }
+
 .slide-caption {
   text-align: right;
   right: 30px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  text-shadow: rgb(0, 0, 0) 2px 2px;
 }
-.slide-caption h6 {
-  margin-top: 0px;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #fff;
-}
+
 .slide-caption h2 {
   margin-top: 0px;
   font-size: 60px;
   text-transform: uppercase;
   font-weight: 900;
   color: #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.slide-caption h6 {
+  margin-top: 0px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  max-width: 350px;
+  margin-left: 75px;
 }
 
 
 
 
 /* Slide 2 Style */
+
 .second-content {
-	top: 180%!important;
+	top: 165%!important;
 	transform: translateY(-180%);
 }
 #tabs {
@@ -421,7 +448,7 @@ nav a::before {
 }
 #tabs ul {
   margin: 0;
-  padding: 0;
+  padding-top: 10%;
   float: left;
 }
 #tabs ul li {
@@ -454,8 +481,8 @@ nav a::before {
   border-radius: 50%;
 }
 #tabs ul .ui-tabs-active span {
-  background: #faf5b2;
-  border: #faf5b2;
+  background: #e98224;
+  border: #e98224;
   line-height: 90px;
   border-bottom: none;
 }
@@ -466,69 +493,110 @@ nav a::before {
   color: #1e1e1e;
 }
 .tabs-content {
+  color: rgba(255, 255, 255, 0.8);;
   margin-left: 60px;
   width: 585px;
   text-align: left;
   display: inline-block;
-  background: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
   margin-right: 30px;
-  padding: 60px;
+  padding: 45px;
+  transition: background-color 0.5s;
 }
+
+.tabs-content:hover {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.tabs-content .content-title {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .tabs-content h2 {
-  font-size: 29px;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: 900;
-  color: #1e1e1e;
   margin-top: 0px;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.8);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
+
 .tabs-content span {
-  font-size: 15px;
-  color: #7a7a7a;
-  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
 }
 .tabs-content p {
   font-size: 14px;
-  color: #7a7a7a;
-  margin-top: 30px;
+  margin-top: 25px;
   margin-bottom: 0px;
 }
 
+#projekti {
+  list-style-type: none;
+}
+
+#projekti li {
+  counter-increment: step-counter;
+  margin-top: 10px;
+  text-align: left;
+}
+
+#projekti li:before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  background-color: #e98324b0;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+  padding: 3px 8px;
+}
+
+#projekti .project-name{
+  display: inline;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.8);
+}
 
 
 /* Slide 3 Style */
+
 .third-content {
 	top: 120%!important;
 	transform: translateY(-120%);
+  padding-top: 4%;
 }
+
+.owl-carousel .owl-stage {
+  left: 0px; 
+}
+
 .third-slide a {
-  text-decoration: none;
+  text-decoration: none!important;
 }
+
 .featured-item {
-  transition: all 0.5s;
-  text-align: left;
+  text-align: center;
 }
+
 .featured-item img {
   width: 100%;
 }
+
 .featured-item .down-content {
-  background-color: #fff;
-  border: 5px solid #faf5b2;
+  background-color: #e98324cb;
   padding: 15px;
+  transition: background-color 0.7s;
 }
+
 .featured-item h4 {
   margin-top: 0px;
   font-size: 18px;
-  text-transform: uppercase;
-  font-weight: 900;
-  color: #1e1e1e;
-  transition: all 0.5s;
+  font-weight: 600;
+  color: #fff;
 }
-.featured-item h6 {
-  color: #1e1e1e;
-  font-size: 14px;
-  font-weight: 900;
-  margin-bottom: 0px;
-}
+
 .owl-dots {
   text-align: center;
   margin-top: 30px;
@@ -538,7 +606,7 @@ nav a::before {
   display: inline-block;
 }
 .owl-dots .active span {
-  background-color: #faf5b2!important;
+  background-color: #e98224!important;
 }
 .owl-dots .owl-dot span {
   background-color: #fff;
@@ -550,22 +618,27 @@ nav a::before {
   cursor: pointer;
 }
 
-
-
 /* Slide 4 Style */
+
 .fourth-content {
-	top: 140%!important;
+	top: 134%!important;
   height: 100%;
 	transform: translateY(-140%);
 }
+
 #contact {
   text-align: center;
   margin: 0 auto;
   max-width: 750px;
-  margin-bottom: 100px;
   padding: 40px;
-  background-color: rgba(0,0,0,0.9);
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: background-color 0.5s;
 }
+
+#contact:hover {
+  background-color: rgba(0, 0, 0, 0.85); ;
+}
+
 #contact h2 {
   font-size: 29px;
   text-transform: uppercase;
@@ -574,10 +647,11 @@ nav a::before {
   margin-top: 0px;
   margin-bottom: 50px;
 }
+
 #contact input,
 #contact textarea {
   padding-left: 15px;
-  background-color: rgba(0,0,0,0.1);
+  background-color: #0000001a;
   border: 1px solid #fff;
   border-radius: 0px;
   height: 40px;
@@ -585,18 +659,21 @@ nav a::before {
   color: #fff;
   margin-bottom: 30px;
 }
+
 #contact input:focus,
 #contact textarea:focus {
   color: #fff;
   outline: none;
   box-shadow: none;
-  border: 1px solid rgba(250,245,178,1);
+  border: 1px solid #F5A845;
   background-color: rgba(0,0,0,0.1);
 }
+
 #contact textarea {
   height: 160px;
   padding: 15px;
 }
+
 #contact button {
   border: 2px solid #fff;
   font-size: 15px;
@@ -612,16 +689,80 @@ nav a::before {
   transition: all 0.3s;
   outline: none;
 }
+
 #contact button:hover {
-  background-color: #faf5b2;
-  border-color: #faf5b2;
+  background-color: #e98324b9;
+  border-color: #F5A845;
   color: #1e1e1e;
 }
 
 
-
-
 /* Responsive Style */
+
+
+@media (min-width: 991px) {
+
+  .logo {
+    background-color: #e98324d8;
+  }
+
+  #logo2 {
+    display: none;
+  }
+
+  .logo img {
+    height: 85%;
+    margin-top: 3%;
+  }
+
+  #thumbnail ul li.inactive::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 120px;
+    background-color: #242424;
+    opacity: .3;
+  }
+
+  .third-content .container-fluid {
+    padding-left: 0px; 
+  }
+
+  .featured-item a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    margin-left: 14px;
+    height: 83.5%;
+    background-color: #242424;
+    opacity: .2;
+    transition: opacity 0.7s;
+  }
+  
+  .featured-item a:hover {
+    text-shadow: 1px 1px #2c2828;
+    text-decoration: none;
+  }
+  
+  .featured-item a:hover::before {
+    opacity: 0;
+  }
+
+  .featured-item .down-content:hover {
+    background-color: #e98324; 
+  }
+
+  .step-logo {
+    height: 100px; 
+    margin-top: 5px;
+  }
+  
+}
+
+
 @media (max-width: 991px) {
 
   .slides .slide .content {
@@ -629,38 +770,37 @@ nav a::before {
 	height: 90%;
 	left: 0;
   }
+
   .second-content {
-	top: 250%!important;
+	top: 238%!important;
 	transform: translateY(-250%);
   }
+
   .third-content {
 	top: 140%!important;
 	transform: translateY(-140%);
+  padding-top: 5%;
   }
+
   .fourth-content {
-	top: 220%!important;
+	top: 215%!important;
 	transform: translateY(-220%);
   }
-  .logo h1 {
+
+  .logo {
+    border-right: solid 1px grey;
+    background-color: rgba(0, 0, 0, 0.75);
+  }
+
+  .logo img {
+    width: 85%;
+    margin-top: 25%;
+  }
+  
+  #logo1 {
     display: none;
   }
-  .logo h2 {
-  	margin-top: 0px;
-    line-height: 100px;
-    height: 100px;
-    width: 15vw;
-    top: 0;
-    left: 0;
-    z-index: 999999;
-    position: fixed;
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #111;
-    display: inline-block;
-    text-align: center;
-    background-color: #faf5b2;
-  }
+
   nav {
     top: 0vh;
     height: 100px;
@@ -693,33 +833,63 @@ nav a::before {
   .slide-caption h2 {
   	font-size: 48px;
   }
+
   .tabs-content {
+    max-height: 420px;
     width: auto;
     text-align: center;
     margin: 0px 30px;
     padding: 20px;
+    overflow-y: scroll;
   }
+
   .tabs-content p {
     margin-top: 20px;
   }
+
   #tabs ul li {
     display: inline-block;
     margin: 0px 10px;
   }
+
   #tabs ul {
     float: none;
     margin-bottom: 30px;
     width: 100%;
     text-align: center;
   }
+
+  #thumbnail {
+    bottom: 5%;
+    left: 10%;
+  }
+
   #thumbnail ul li {
     max-width: 80px;
     max-height: 80px;
     margin-left: 10px;
   }
+
+  #thumbnail ul li span {
+    font-size: 13px;
+  }
+
   .slide-caption {
     padding-left: 30px;
   }
+  
+  .slide-caption h6 {
+    text-align: center;
+    margin-left: 0px;
+    margin-bottom: 5px;
+  }
+
+  .slide-caption h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+
   #tabs ul li span {
     width: 60px;
     height: 60px;
@@ -732,6 +902,11 @@ nav a::before {
   .featured-item {
     padding: 30px 15px;
   }
+
+  #thumbnail ul li.active {
+    border: 3px solid #e98324d3;
+  }
+
   .owl-dots {
     margin-top: 10px;
     padding-bottom: 30px;
@@ -743,22 +918,22 @@ nav a::before {
     text-align: center;
     margin: 0px;
   }
+
+  .step-logo {
+    height: 70px; 
+    margin-top: 5px;
+  }
+
   .fourth-slide {
     margin-left: 0;
     top: 0;
     transform: translateY(0%);
     margin-top: 140px;
   }
-  .contact-form {
-    padding: 20px;
-  }
-  .contact-form h2 {
-    font-size: 29px;
-    text-transform: uppercase;
-    font-weight: 900;
-    color: #fff;
-    margin-top: 0px;
-    margin-bottom: 20px;
+  
+  #contact h2 {
+    font-size: 20px;
   }
 
 }
+

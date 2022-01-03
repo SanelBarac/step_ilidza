@@ -40,8 +40,12 @@ jQuery(document).ready(function($) {
                     nextImage(thisIndex, $(this).parents("#thumbnail").prev("#image-slider"));
                 }
                     
+                $('#thumbnail li.active').addClass('inactive');
                 $('#thumbnail li.active').removeClass('active');
+                
                 $(this).addClass('active');
+                $(this).removeClass('inactive');
+                
 
                 });
             });
