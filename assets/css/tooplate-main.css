@@ -165,7 +165,7 @@ nav {
   text-align: center;
   background: rgba(0, 0, 0, 0.75);
   position: fixed;
-  z-index: 100;
+  z-index: 10;
   height: 90%;
   left: 0;
   width: 15%;
@@ -379,8 +379,8 @@ nav a::before {
 
 #thumbnail ul li {
   display: inline-block;
-  max-width: 120px;
-  max-height: 120px;
+  width: 120px;
+  height: 120px;
   margin-left: 30px;
   cursor: pointer;
   transition: all 0.5s;
@@ -388,7 +388,7 @@ nav a::before {
 }
 
 #thumbnail ul li.active {
-  border: 4px solid #e98324d2;
+  border: 3px solid #e98324d2;
   text-shadow: rgb(22, 22, 22) 2px 2px;
 }
 
@@ -401,6 +401,7 @@ nav a::before {
 }
 
 #thumbnail ul li img {
+  min-width: 100%;
   max-width: 100%;
   overflow: hidden;
 }
@@ -411,7 +412,6 @@ nav a::before {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  text-shadow: rgb(0, 0, 0) 2px 2px;
 }
 
 .slide-caption h2 {
@@ -420,13 +420,12 @@ nav a::before {
   text-transform: uppercase;
   font-weight: 900;
   color: #fff;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #e98324d2;
 }
 
 .slide-caption h6 {
   margin-top: 0px;
-  font-size: 14px;
-  text-transform: uppercase;
+  font-size: 16px;
   font-weight: 700;
   color: #fff;
   max-width: 350px;
@@ -487,10 +486,10 @@ nav a::before {
   border-bottom: none;
 }
 #tabs ul .ui-tabs-active a {
-  color: #000;
+  color: #fff;
 }
 #tabs ul .ui-tabs-active span {
-  color: #1e1e1e;
+  color: #fff;
 }
 .tabs-content {
   color: rgba(255, 255, 255, 0.8);;
@@ -627,6 +626,7 @@ nav a::before {
 }
 
 #contact {
+  z-index: 15;
   text-align: center;
   margin: 0 auto;
   max-width: 750px;
@@ -693,7 +693,7 @@ nav a::before {
 #contact button:hover {
   background-color: #e98324b9;
   border-color: #F5A845;
-  color: #1e1e1e;
+  color: #fff;
 }
 
 
@@ -790,6 +790,7 @@ nav a::before {
   .logo {
     border-right: solid 1px grey;
     background-color: rgba(0, 0, 0, 0.75);
+    height: 90px;
   }
 
   .logo img {
@@ -803,7 +804,7 @@ nav a::before {
 
   nav {
     top: 0vh;
-    height: 100px;
+    height: 90px;
     width: 85vw;
     margin-left: 15vw;
   }
@@ -901,10 +902,6 @@ nav a::before {
   }
   .featured-item {
     padding: 30px 15px;
-  }
-
-  #thumbnail ul li.active {
-    border: 3px solid #e98324d3;
   }
 
   .owl-dots {
