@@ -163,7 +163,7 @@ body {
 nav {
 	top: 15%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
   z-index: 10;
   height: 90%;
@@ -171,6 +171,11 @@ nav {
   width: 15%;
   font-weight: 300;
   font-size: 1rem;
+  transition: background-color 1s;
+}
+
+nav:hover{
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 nav em {
@@ -415,11 +420,12 @@ nav a::before {
 
 .slide-caption h2 {
   margin-top: 0px;
-  font-size: 50px;
-  font-weight: 800;
+  font-size: 68px;
+  font-weight: 600;
   color: #fff;
   border-bottom: 2px solid #fff;
   padding-bottom: 10px;
+
 }
 
 .slide-caption p {
@@ -429,9 +435,6 @@ nav a::before {
   color: #fff;
   max-width: 350px;
 }
-
-
-
 
 /* Slide 2 Style */
 
@@ -513,49 +516,38 @@ nav a::before {
 }
 
 .tabs-content h2 {
-  font-size: 22px;
+  font-size: 26px;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 600;
   margin-top: 0px;
-  border-bottom: solid 1px #e98324ce;;
+  border-bottom: solid 1px #e98324ce;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
 .tabs-content span {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
 }
 .tabs-content p {
-  font-size: 14px;
+  font-size: 15px;
   margin-top: 25px;
   margin-bottom: 0px;
+  text-align: justify;
 }
 
-#projekti {
-  list-style-type: none;
+#contact-step {
+  font-size: 12px;
 }
 
-#projekti li {
-  counter-increment: step-counter;
-  margin-top: 10px;
-  text-align: left;
+.contact-step-li a{
+  color: rgba(212, 188, 107, 0.85)!important;
+  transition: color 0.5s;
+  
 }
 
-#projekti li:before {
-  content: counter(step-counter);
-  margin-right: 5px;
-  background-color: #e98324b0;
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: bold;
-  padding: 3px 8px;
-}
-
-#projekti .project-name{
-  display: inline;
-  font-size: 15px;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.8);
+.contact-step-li a:hover {
+  color:rgb(85, 199, 199)!important;
 }
 
 
@@ -640,12 +632,19 @@ nav a::before {
 }
 
 #contact h2 {
-  font-size: 29px;
+  font-size: 30px;
   text-transform: uppercase;
-  font-weight: 900;
-  color: #fff;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(200, 200, 200);
+  margin-bottom: 30px;
 }
 
 #contact input,
@@ -670,15 +669,15 @@ nav a::before {
 }
 
 #contact textarea {
-  height: 160px;
+  height: 100px;
   padding: 15px;
 }
 
 #contact button {
-  border: 2px solid #fff;
+  border: 1px solid rgba(255, 255, 255, 0.9);
   font-size: 15px;
   text-transform: uppercase;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 700;
   background-color: transparent;
   height: 44px;
@@ -691,9 +690,9 @@ nav a::before {
 }
 
 #contact button:hover {
-  background-color: #e98324b9;
-  border-color: #F5A845;
-  color: #fff;
+  background-color: #e98324e3;
+  border-color: #e98324e3;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -704,6 +703,12 @@ nav a::before {
 
   .logo {
     background-color: #e98324e3;
+    transition: background-color 0.5s;
+    padding-top: 8px;
+  }
+
+  .logo:hover {
+    background-color: #e98324;
   }
 
   #logo2 {
@@ -711,8 +716,7 @@ nav a::before {
   }
 
   .logo img {
-    height: 85%;
-    margin-top: 3%;
+    height: 90%;
   }
 
   #thumbnail ul li.inactive::before {
@@ -726,7 +730,7 @@ nav a::before {
   }
 
   #tabs ul {
-    margin-top: 15%;
+    margin-top: 13%;
   }
 
   .third-content .container-fluid {
@@ -760,8 +764,8 @@ nav a::before {
   }
 
   .step-logo {
-    height: 100px; 
-    margin-top: 5px;
+    height: 90px; 
+    margin-top: 2%;
   }
   
 }
@@ -793,13 +797,15 @@ nav a::before {
 
   .logo {
     border-right: solid 1px grey;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
+    top: 0vh;
     height: 90px;
+    width: 15vw;
   }
 
   .logo img {
-    width: 85%;
-    margin-top: 25%;
+    height: 75%;
+    margin-top: 10px;
   }
   
   #logo1 {
@@ -811,6 +817,7 @@ nav a::before {
     height: 90px;
     width: 85vw;
     margin-left: 15vw;
+    background-color: rgba(0, 0, 0, 0.85);
   }
   nav ul {
     flex-direction: row;
@@ -835,9 +842,6 @@ nav a::before {
   .second-slide {
     top: 140px;
   }
-  .slide-caption h2 {
-  	font-size: 48px;
-  }
 
   .tabs-content {
     max-height: 420px;
@@ -860,13 +864,13 @@ nav a::before {
   #tabs ul {
     float: none;
     margin-bottom: 30px;
+    margin-top: 30px;
     width: 100%;
     text-align: center;
   }
 
   #thumbnail {
     bottom: 5%;
-    left: 10%;
   }
 
   #thumbnail ul li {
@@ -882,19 +886,15 @@ nav a::before {
   .slide-caption {
     padding-left: 30px;
   }
-  
-  .slide-caption h6 {
-    text-align: center;
-    margin-left: 0px;
-    margin-bottom: 5px;
-  }
 
   .slide-caption h2 {
-    font-size: 40px;
+    font-size: 55px;
     text-align: center;
   }
 
-
+  .slide-caption p {
+    text-align: center;
+  }
   #tabs ul li span {
     width: 60px;
     height: 60px;
@@ -936,5 +936,36 @@ nav a::before {
     font-size: 20px;
   }
 
+}
+
+@media (max-width: 420px) {
+
+  .slides .slide:nth-child(2) {
+    background-image: url(../images/about-bg-small.jpg);
+    background-position: fixed;
+  }
+  .slides .slide:nth-child(3) {
+    background-image: url(../images/gallery-bg-small.jpg);
+    background-position: fixed;
+  }
+  .slides .slide:nth-child(4) {
+    background-image: url(../images/contact-bg-small.jpg);
+    background-position: fixed;
+  }
+  #image-slider ul li:nth-child(1) {
+    background-image: url(../images/full-bg-01-small.jpg);
+  }
+  
+  #image-slider ul li:nth-child(2) {
+    background-image: url(../images/full-bg-02-small.jpg);
+  }
+  
+  #image-slider ul li:nth-child(3) {
+    background-image: url(../images/full-bg-03-small.jpg);
+  }
+  
+  #thumbnail {
+    left: 8%;
+  }
 }
 
