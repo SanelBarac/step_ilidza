@@ -117,15 +117,21 @@ https://www.tooplate.com/view/2113-earth
                       <div class="container-fluid content-title">
                         <h2>Projekat</h2>
                         <div class="row">
-                          <div class="col-3">
+                          <div class="col-3 d-none d-lg-inline-block">
                               <img class="w-50" style="height: 90%;" src="assets/images/logo3.png" alt="project_logo">
                           </div>
-                          <div class="col-6">
+                          <div class="col-12 col-lg-6 mb-3" style="padding-left: 10px; padding-right: 10px;">
                                 <span>Identifikacija i mapiranje okolišnih problema na području općine Ilidža</span> 
-                          </div>
-                          <div class="col-3">
-                              <img class="w-50 mt-1" style="height: 90%;" src="assets/images/ilidza-logo.png" alt="ilidza_logo">
                           </div> 
+                          <div class="col-3 d-none d-lg-inline-block">
+                              <img class="w-50 mt-1" style="height: 90%;" src="assets/images/ilidza-logo.png" alt="ilidza_logo">
+                          </div>
+                          <div class="col-6 d-lg-none"> <!-- Responsive div -->
+                            <img class="w-50" style="height: 90%;"  src="assets/images/logo3.png" alt="project_logo">
+                          </div>
+                          <div class="col-6 d-lg-none "> <!-- Responsive div -->
+                            <img class="w-50 mt-1" style="height: 90%;" src="assets/images/ilidza-logo.png" alt="ilidza_logo">
+                          </div>
                         </div>
                       </div>  
                       <p> 
@@ -163,23 +169,23 @@ https://www.tooplate.com/view/2113-earth
                       <p><span>Naša misija:</span> Ekološki osvještena BiH bazirana na principima
                         održivog razvoja sa turizmom kao jednom od vodećih privrednih djelatnosti.
                       </p>
-                      <div class="container mt-4" style="padding: 0px;">
+                      <div class="container mt-lg-4" style="padding: 0px;">
                         <div class="row">
                           <div class="col-12 col-lg-7 mt-2">
-                             <a href="nvostep.ba"><img class="step-logo" src="assets/images/step-logo.png" alt="step_logo"></a>
+                             <a id="step-logo-link" href="nvostep.ba"><img class="step-logo" src="assets/images/step-logo.png" alt="step_logo"></a>
                           </div>
                           <div class="col-12 col-lg-5">
                             <ul id="contact-step" style="float: none; margin: 0px; font-weight: 600;">
-                                  <li class="contact-step-li" style="margin-top: 0px; margin-bottom: 5px;" >
+                                  <li class="col-12 contact-step-li" style="margin-top: 0px; margin-bottom: 5px;" >
                                       <a style="padding-left: 1px; text-transform: none;" href="#"><img style="height: 20px; margin-right: 2px;" src="assets/images/loc.png" alt="#" /> Vrela do br. 18, 71210 Ilidža</a> 
                                   </li>
-                                  <li class="contact-step-li" style="padding-top: 5px; margin-bottom: 5px;">
+                                  <li class="col-12 contact-step-li" style="padding-top: 5px; margin-bottom: 5px;">
                                       <a style="text-transform: none;" href="#"><img style="height: 14px; margin-right: 2px;" src="assets/images/email.png" alt="#" /> nvo.step@gmail.com </a> 
                                   </li>
-                                  <li class="contact-step-li" style="padding-top: 5px; margin-bottom: 5px;">
+                                  <li class="col-12 contact-step-li" style="padding-top: 5px; margin-bottom: 5px;">
                                       <a style="padding-left: 1px; text-transform: none;" href="#"><img style="height: 15px; margin-right: 2px;" src="assets/images/call.png" alt="#" /> +387 33 838 014 </a> 
                                   </li>
-                                  <li class="contact-step-li" style="padding-top: 5px; margin-bottom: 5px;">
+                                  <li class="col-12 contact-step-li" style="padding-top: 5px; margin-bottom: 5px;">
                                     <a style="padding-left: 1px; text-transform: none;" href="#"><img style="height: 18px; margin-right: 2px;" src="assets/images/insta.png" alt="#" /> step.nvo</a> 
                                 </li>
                               </ul>
@@ -356,37 +362,37 @@ https://www.tooplate.com/view/2113-earth
                 <div class="container-fluid">
                     <form id="contact" action="" method="post">
                         <div class="row">
-                          <div class="col-md-12">
+                          <div class="col-12">
                             <h2>Prijavi se i volontiraj!</h2>
                             <p>Pošaljite nam Vaše podatke kako biste učestvovali u kampanji i dali 
                               svoj doprinos u očuvanju i zaštiti okoliša u Vašoj lokalnoj zajednici.</p>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6">
                             <fieldset>
                               <input name="name" type="text" class="form-control" id="name" placeholder="Vaše ime..." required>
                             </fieldset>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6">
                             <fieldset>
                               <input name="age" type="number" class="form-control" id="age" placeholder="Vaša dob..." required>
                             </fieldset>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6">
                             <fieldset>
                               <input name="phone" type="tel" class="form-control" id="phone" placeholder="Vaš telefon..." required>
                             </fieldset>
                           </div>
-                          <div class="col-md-6">
+                          <div class="col-6">
                             <fieldset>
                               <input name="mail" type="email" class="form-control" id="mail" placeholder="Vaš e-mail..." required>
                             </fieldset>
                           </div>
-                          <div class="col-md-12">
+                          <div class="col-12">
                             <fieldset>
                               <textarea name="message" rows="6" class="form-control" id="message" placeholder="Pitajte nas nešto..."></textarea>
                             </fieldset>
                           </div>
-                          <div class="col-md-12">
+                          <div class="col-12">
                             <fieldset>
                               <button type="submit" id="form-submit" class="button">Pošalji</button>
                             </fieldset>

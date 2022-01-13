@@ -529,6 +529,7 @@ nav a::before {
   font-size: 15px;
   font-weight: 600;
 }
+
 .tabs-content p {
   font-size: 15px;
   margin-top: 25px;
@@ -542,8 +543,7 @@ nav a::before {
 
 .contact-step-li a{
   color: rgba(212, 188, 107, 0.85)!important;
-  transition: color 0.5s;
-  
+  transition: color 0.5s;  
 }
 
 .contact-step-li a:hover {
@@ -935,10 +935,12 @@ nav a::before {
   #contact h2 {
     font-size: 20px;
   }
-
 }
 
 @media (max-width: 420px) {
+
+
+/* Slide 1 */
 
   .slides .slide:nth-child(2) {
     background-image: url(../images/about-bg-small.jpg);
@@ -967,5 +969,53 @@ nav a::before {
   #thumbnail {
     left: 8%;
   }
+
+
+
+/* Slide 2 */
+  
+  .tabs-content p {
+    text-align: left;
+  }
+
+  #step-logo-link {
+    margin-right: 5%; 
+  }
+
+  #contact-step {
+    margin-top: 15px!important;
+    font-size: 14px!important;
+    text-align: left!important;
+  }
+
+
+/* Slide 3 */
+
+
+
+/* Slide 4 */
+
+  #contact {
+    padding: 30px 20px 30px 20px;
+  }
+
+  #contact p {
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  #contact input,
+  #contact textarea {
+    padding-left: 10px;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+
+  #contact textarea {
+    height: 100px;
+    padding: 10px;
+  }
+
 }
 
