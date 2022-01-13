@@ -996,25 +996,29 @@ nav a::before {
 /* Slide 4 */
 
   #contact {
-    padding: 30px 20px 30px 20px;
+    padding: 25px;
   }
 
   #contact p {
     font-size: 12px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   #contact input,
   #contact textarea {
     padding-left: 10px;
     height: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   #contact textarea {
-    height: 100px;
+    height: 90px;
     padding: 10px;
+  }
+
+  #age-input {
+    padding-left: 0px;
   }
 
 }
