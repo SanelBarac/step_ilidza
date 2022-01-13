@@ -615,7 +615,6 @@ nav a::before {
 	top: 134%!important;
   height: 100%;
 	transform: translateY(-140%);
-	bottom: 0!important;
 }
 
 #contact {
@@ -642,7 +641,7 @@ nav a::before {
 }
 
 #contact p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   color: rgb(200, 200, 200);
   margin-bottom: 30px;
@@ -996,8 +995,13 @@ nav a::before {
 
 /* Slide 4 */
 
+  .fourth-content {
+    bottom: -50px!important;
+  }
+
   #contact {
     padding: 25px;
+    
   }
 
   #contact p {
