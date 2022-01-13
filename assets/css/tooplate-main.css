@@ -791,8 +791,8 @@ nav a::before {
   }
 
   .fourth-content {
-    top: 215%!important;
-    transform: translateY(-220%);
+    top: 209%!important;
+    transform: translateY(-215%);
   }
 
   .logo {
