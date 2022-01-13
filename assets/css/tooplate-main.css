@@ -791,9 +791,9 @@ nav a::before {
   }
 
   .fourth-content {
-    top: 215%!important;
+    top: 192%!important;
     transform: translateY(-220%);
-    margin-top: 38%;
+    padding-top: 38%;
   }
 
   .logo {
@@ -998,7 +998,7 @@ nav a::before {
 
   #contact {
     padding: 25px;
-    min-height: 450px;
+ 
   }
 
   #contact p {
