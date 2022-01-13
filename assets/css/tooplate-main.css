@@ -615,7 +615,7 @@ nav a::before {
 	top: 134%!important;
   height: 100%;
 	transform: translateY(-140%);
-	bottom: !important;
+	bottom: 0!important;
 }
 
 #contact {
