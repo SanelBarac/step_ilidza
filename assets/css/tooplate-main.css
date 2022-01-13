@@ -791,9 +791,8 @@ nav a::before {
   }
 
   .fourth-content {
-    top: 192%!important;
+    top: 215%!important;
     transform: translateY(-220%);
-    padding-top: 38%;
   }
 
   .logo {
