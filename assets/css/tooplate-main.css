@@ -785,7 +785,7 @@ nav a::before {
 
   .second-content {
     top: 238%!important;
-    transform: translateY(-265%);
+    transform: translateY(-264%);
   }
 
   .third-content {
@@ -1004,7 +1004,6 @@ nav a::before {
 
   #contact {
     padding: 25px;
-    min-height: 420px;
   }
 
   #contact p {
