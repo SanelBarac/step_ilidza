@@ -785,18 +785,18 @@ nav a::before {
 
   .second-content {
     top: 238%!important;
-    transform: translateY(-250%);
+    transform: translateY(-265%);
   }
 
   .third-content {
     top: 140%!important;
-    transform: translateY(-140%);
+    transform: translateY(-150%);
     padding-top: 5%;
   }
 
   .fourth-content {
     top: 215%!important;
-    transform: translateY(-220%);
+    transform: translateY(-230%);
   }
 
   .logo {
@@ -1002,6 +1002,7 @@ nav a::before {
   #contact {
     padding: 25px;
     min-height: 420px;
+	bottom: 0;
   }
 
   #contact p {
