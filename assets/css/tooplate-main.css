@@ -795,8 +795,8 @@ nav a::before {
   }
 
   .fourth-content {
-    top: min(215%)!important;
-    transform: translateY(-225%);
+    top: 215%!important;
+    transform: translateY(-215%);
   }
 
   .logo {
